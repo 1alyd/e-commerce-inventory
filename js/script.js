@@ -16,11 +16,13 @@ form.addEventListener('submit', (e) => {
 
     let content = document.getElementById('content')
     let carregando = '<p>carregando...</p>'
-    let pronto = '<p>Pronto</p>'
+    let pronto = '<p>Pronto!</p> <p>Obrigado por se cadastrar</p>'
 
     content.innerHTML = carregando
 
     setTimeout(()=>{
         content.innerHTML = pronto
     },1000)
+
+    setTimeout("location.href = ''",3000);
 })

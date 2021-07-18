@@ -5,25 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Black Friday</title>
+    <title>Black Friday - Skincare</title>
 </head>
 <body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Pagina Inicial</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Novidades</a></li>
+            
+        </ul>
+    </nav>
+    <div id="logo">
+        <img src="./assets/logo.png" alt="logotipo">
+    </div>
     <section class = "section-container backgroud-section-one">
-       <img src="assets/glass-blackfriday.jpg" alt="logo-tipo"/> 
-    </section>
-    <section class="section-container backgroud-section-two">
+        
+        <div class="person-container"></div>
+
+        <div>
+            <div id="conteudo">
+                <h1>Receba preços incríveis!</h1>
+                <p>
+                    Sua rotina de Skincare.
+                </p>
+                <p>
+                    Cadastre-se e receba ofertas exclusivas dos melhores produtos de Skincare em primeira mão!
+                </p>
+            </div>
+        </div>
+
         <div class="card-container">
             <div id="content">  
                 <form id="form">
                     <input type="text" placeholder="Nome" id="name">
                     <input type="text" placeholder="E-mail" id = "email">
-                    <input type="submit" value="Cadastrar" class="buttom-go">
+                    <input type="submit" value="Cadastrar" id="botao">
                 </form>
             </div>
         </div>
-    </section>
 
-    <footer>© Todos os direitos reservados.</footer>
+        <div class="logo-container">
+            <!--<img src="assets/glass-blackfriday.jpg" alt="logo-tipo"/> -->   
+        </div>
+
+    </section>
+    
+
+    <footer>&copy;Todos os Direitos Reservados.</footer>
 </body>
 <script src="js/script.js"></script>
 </html>
