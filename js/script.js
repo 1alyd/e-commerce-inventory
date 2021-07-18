@@ -1,17 +1,15 @@
 const form = document.getElementById('form')
 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
-    alert('HELLO')
 
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
-    console.log(name,email)
-
     let data = {
-        nome,
+        name,
         email,
     }
+
     let convertData = JSON.stringify(data);
 
     localStorage.setItem('lead', convertData)
@@ -25,5 +23,4 @@ form.addEventListener('submit', (e) =>{
     setTimeout(()=>{
         content.innerHTML = pronto
     },1000)
-
 })
