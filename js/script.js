@@ -24,5 +24,5 @@ form.addEventListener('submit', (e) => {
         content.innerHTML = pronto
     },1000)
 
-    setTimeout("location.href = ''",3000);
+    setTimeout("location.href = 'second-page.html'",2000);
 })
