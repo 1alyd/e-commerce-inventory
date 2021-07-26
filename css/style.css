@@ -8,10 +8,13 @@ html {
 }
 
 #menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#ef9394;
-    list-style:none;
+    @media screen {
+        padding:0px;
+        margin:0px;
+        background-color:#ef9394;
+        list-style:none;
+    }
+    
 }
 
 #menu ul li { 
@@ -48,14 +51,17 @@ html {
 }
 
 #conteudo{
-    border-radius: 25px;
-    padding: 25px;
-    width: 200px;
-    height: 150px;
-    background-color:#BDA9CE;
-    position: relative;
-    margin-left: 50px;
-	margin-top:70px;
+    @media screen {
+        border-radius: 25px;
+        padding: 25px;
+        width: 200px;
+        height: 150px;
+        background-color:#BDA9CE;
+        position: relative;
+        margin-left: 50px;
+        margin-top:70px; 
+    }
+    
 }
 
 #conteudo h1{
@@ -85,35 +91,44 @@ html {
 }
 
 .backgroud-section-two{
-    background-image: url(../assets/pink-\ marsh.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @media screen {
+        background-image: url(../assets/pink-\ marsh.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
 }
 
 .logo-container{
-    background-image: url(../assets/glass-blackfriday.jpg);
-    border-radius: 25px;
-    padding: 50px;
-    width: 450px;
-    height: 340px;
-    margin-left: 60px;
-	margin-top: 100px;
+    @media screen {
+        background-image: url(../assets/glass-blackfriday.jpg);
+        border-radius: 25px;
+        padding: 50px;
+        width: 450px;
+        height: 340px;
+        margin-left: 60px;
+	    margin-top: 100px;
+    }
+    
 
 }
 
 .person-container{
-    background-image: url(../assets/pink-woman\ smiling-resize.jpg);
-    border-radius: 25px;
-    padding: 35px;
-    /* do objeto */
-    width: 500px;
-    height: 250px;
+    @media screen {
+        background-image: url(../assets/pink-woman\ smiling-resize.jpg);
+        border-radius: 25px;
+        padding: 35px;
+        /* do objeto */
+        width: 500px;
+        height: 250px;
+    
+        background-size: cover;
+        position:absolute;
+        margin-right: 500px;
+        margin-bottom:250px;  
+    }
 
-    background-size: cover;
-    position:absolute;
-    margin-right: 500px;
-	margin-bottom:250px;
 }
 
 .card-container{
