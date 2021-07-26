@@ -43,11 +43,43 @@ html {
     border-bottom:3px solid #4B3B47;
 }
 
-#logo{
-    padding: 0px;
-    margin-bottom: 100px;
-    margin-left: 800px;
-    position: absolute;
+section {
+    height: 100vh;
+    width: 100%;
+    background: #e2e2;
+}
+
+.product-c{
+    float: left;
+    width: 33.33%;
+    border-radius: 80px;
+    
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+    
+  }
+
+.product-content{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    padding: auto;
+    text-align: center;
+    height: 300px;
+    background: #fff;
+    border-radius: 12px;
 }
 
 #conteudo{
@@ -73,73 +105,6 @@ html {
 #conteudo p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
-}
-
-.section-container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.backgroud-section-one{
-    background-color:#fdc2c1;
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.backgroud-section-two{
-    @media screen {
-        background-image: url(../assets/pink-\ marsh.png);
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-}
-
-.logo-container{
-    @media screen {
-        background-image: url(../assets/glass-blackfriday.jpg);
-        border-radius: 25px;
-        padding: 50px;
-        width: 450px;
-        height: 340px;
-        margin-left: 60px;
-	    margin-top: 100px;
-    }
-    
-
-}
-
-.person-container{
-    @media screen {
-        background-image: url(../assets/pink-woman\ smiling-resize.jpg);
-        border-radius: 25px;
-        padding: 35px;
-        /* do objeto */
-        width: 500px;
-        height: 250px;
-    
-        background-size: cover;
-        position:absolute;
-        margin-right: 500px;
-        margin-bottom:250px;  
-    }
-
-}
-
-.card-container{
-    background-color: #BDA9CE;
-    border-radius: 25px;
-    padding: 25px;
-    max-width: 500px;
-    margin-top: 350px;
-    margin-left: 50px;
-    /* position: relative; */
-    
 }
 
 input{
