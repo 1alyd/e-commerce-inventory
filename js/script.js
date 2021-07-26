@@ -4,10 +4,18 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     let name = document.getElementById('name').value;
+    let lastname = document.getElementById('lastname').value;
+    let street = document.getElementById('street').value;
+    let state = document.getElementById('state').value;
     let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
     let data = {
         name,
+        lastname,
+        street,
+        state,
         email,
+        phone
     }
 
     let convertData = JSON.stringify(data);
@@ -24,5 +32,5 @@ form.addEventListener('submit', (e) => {
         content.innerHTML = pronto
     },1000)
 
-    setTimeout("location.href = 'second-page.html'",2000);
+    setTimeout("location.href = 'index.html'",2000);
 })
